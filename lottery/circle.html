@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="user-scalable=no" />
+<title>circle</title>
+<link href="../css/circle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="../js/circle.js"></script>
+<script type="text/javascript" src="../js/awardRotate.js"></script>
+</head>
+<body class="keBody">
+<div class="kePublic">
+<!--效果html开始-->
+    <div style="max-width:800px; margin:0 auto">
+    <img src="../img/roleSmall/sunwukong-small.jpg" id="sunwukong-img" style="display:none;" />
+    <img src="../img/roleSmall/fulisa-small.jpg" id="fulisa-img" style="display:none;" />
+    <img src="../img/roleSmall/dandi-small.jpg" id="dandi-img" style="display:none;" />
+    <img src="../img/roleSmall/sunwufan-small.jpg" id="sunwufan-img" style="display:none;" />
+    <img src="../img/roleSmall/shalu-small.jpg" id="shalu-img" style="display:none;" />
+    <img src="../img/roleSmall/beijita-small.jpg" id="beijita-img" style="display:none;" />
+    <img src="../img/roleSmall/ladizi-small.jpg" id="ladizi-img" style="display:none;" />
+    <img src="../img/roleSmall/tianjinfan-small.jpg" id="tianjinfan-img" style="display:none;" />
+    <img src="../img/roleSmall/xiaolin-small.jpg" id="xiaolin-img" style="display:none;" />
+    <img src="../img/roleSmall/buerma-small.jpg" id="buerma-img" style="display:none;" />
+	<div class="banner">
+		<div class="turnplate" style="background-image:url(../img/lottery/turnplate-bg.png);background-size:100% 100%;">
+			<canvas class="item" id="wheelcanvas" width="422px" height="422px"></canvas>
+			<img class="pointer" src="../img/lottery/turnplate-pointer.png"/>
+		</div>
+	</div>
+	<div id="myMsg">龙石剩余: <span id="myRmb"></span></div>
+	<div id="showMsg"></div>
+    </div>
+<!--效果html结束-->
+<div class="clear"></div>
+</div>
+<div class="bottom">
+	<img onclick="history.go(-1)" class="fanhui" src="../img/icon/fanhui.png">
+</div>
+<script>
+	var lotteryName = [];
+	var lotteryRate = [];
+	var index = -1;
+	$("#myRmb").html("10000");
+	var nickName = "堂堂夹心饼";
+	var paramNum = "2000";
+	var enoughFlag = false;
+</script>
+</html>

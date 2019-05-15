@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 600px;
+	background: url('../img/bg/bg_rank.jpg') top right ;
+	background-size:cover;
+	filter : progid:DXImageTransform.Microsoft.AlphaImageLoader ( sizingMethod='scale' , src='../img/bg/bg_rank.jpg');
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+}
+
+.tabs {
+	width: 100%;
+	height: 200px;
+	font-size: 45px;
+	/* border: 5px solid orange; */
+}
+
+.tabs tr td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/* border-bottom: 5px solid #66009D; */
+	color: #66009D;
+	text-align: right;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.userImg {
+	width: 120px;
+	height: 120px;
+	border-radius: 100%;
+	border: 5px solid white;
+	text-align: left;
+}
+
+.title {
+	border-bottom: 5px solid orange;
+}
+
+.orderByDiv {
+	height: 200px;
+	width: 100%;
+	border-bottom: 5px solid orange;
+	padding-left: 120px;
+	padding-right: 120px;
+}
+
+.orderBy {
+	margin-top: 30px;
+	margin-left: 30px;
+	line-height: 120px;
+	width: 120px;
+	height: 120px;
+	border-radius: 100%;
+	font-size: 45px;
+	color: white;
+	text-align: center;
+	float: left;
+	background: #00BBFF;
+	/* 选中颜色#00DDDD */
+	border: 5px solid white;
+}
+
+#rank {
+	font-size: 60px;
+	border-radius: 100%;
+	background: #66009D;
+	color: white;
+	text-align: center;
+	width: 85px;
+}
+
+.fanhui {
+	position: fixed;
+	width: 120px;
+	height: 100px;
+	left: 20px;
+	bottom: 50px;
+}

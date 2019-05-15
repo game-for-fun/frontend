@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 2000px;
+	background: url('../img/bg/bg_jinji.jpg') top center ;
+	background-size:cover;
+	filter : progid:DXImageTransform.Microsoft.AlphaImageLoader ( sizingMethod='scale' , src='../img/bg/bg_jinji.jpg');
+}
+
+.tabs {
+	width: 100%;
+	font-size: 50px;
+	color: orange;
+	/* border: 5px solid orange; */
+}
+
+.tabs tr td {
+	border-radius: 10px;
+	padding-bottom: 20px;
+}
+
+.charPic {
+	height: 140px;
+	width: 140px;
+}
+
+.stars {
+	position: relative;
+	background-image: url("../img/poker/star.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    top: 2px;
+    left: -5px;
+    width: 15px;
+    height: 15px;
+	color: yellow;
+	font-size: 2px;
+}
+
+#upImg {
+	width: 40px;
+	height: 60px;
+}
+
+.starDiv {
+	font-size: 18px;
+}

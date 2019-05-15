@@ -1,0 +1,76 @@
+body {
+	background: url('../img/bg/bg_welcome.jpg') top center ;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter : progid:DXImageTransform.Microsoft.AlphaImageLoader ( sizingMethod='scale' , src='../img/bg/bg_welcome.jpg');
+}
+
+.zhaohuan {
+	width: 150px;
+	height: 80px;
+	position: absolute;
+	border-radius: 100px;
+	border: 2px solid #A73800;
+	top: 250px;
+	left: 100px;
+	font-size: 50px;
+	text-align: center;
+	line-height: 80px;
+	padding: 10px;
+	color: #A73800;
+}
+
+.jinji {
+	width: 150px;
+	height: 80px;
+	position: absolute;
+	border-radius: 100px;
+	border: 2px solid #036803;
+	top: 500px;
+	left: 600px;
+	font-size: 50px;
+	text-align: center;
+	line-height: 80px;
+	padding: 10px;
+	color: #036803;
+}
+
+
+.huodong {
+	width: 150px;
+	height: 80px;
+	position: absolute;
+	border-radius: 100px;
+	border: 2px solid #FF00FF;
+	top: 200px;
+	left: 700px;
+	font-size: 50px;
+	text-align: center;
+	line-height: 80px;
+	padding: 10px;
+	color: #FF00FF;
+}
+
+.rank {
+	width: 150px;
+	height: 80px;
+	position: absolute;
+	border-radius: 100px;
+	border: 2px solid #0066FF;
+	top: 350px;
+	left: 500px;
+	font-size: 50px;
+	text-align: center;
+	line-height: 80px;
+	padding: 10px;
+	color: #0066FF;
+}
+
+.fanhui {
+	position: fixed;
+	width: 120px;
+	height: 100px;
+	left: 20px;
+	bottom: 50px;
+}

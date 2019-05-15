@@ -1,0 +1,37 @@
+* {
+	font-size: 50px;
+}
+
+body {
+	background: url('../img/bg/bg_lottery.jpg') top center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader ( sizingMethod='scale', src='../img/bg/bg_lottery.jpg');
+}
+
+.lotteryForm {
+	margin-top: 1100px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.btn {
+	height: 100px;
+	width: 240px;
+	padding: 5px;
+	background: #EF63F7;
+	border: 1px solid;
+	border-radius: 10px;
+	color: white;
+}
+
+.fleft {
+	margin-top: 300px;
+	float: left;
+}
+
+.fright {
+	margin-top: 300px;
+	float: right;
+}

@@ -1,0 +1,166 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 600px;
+	background: url('../img/bg/bg_huodong.jpg') top center ;
+	background-size:cover;
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+	filter : progid:DXImageTransform.Microsoft.AlphaImageLoader ( sizingMethod='scale' , src='../img/bg/bg_huodong.jpg');
+}
+
+.tabs {
+	width: 100%;
+	height: 200px;
+	font-size: 45px;
+	/* border-left: 5px solid orange;
+	border-right: 5px solid orange; */
+}
+
+.tabs tr td {
+	/* border: 5px solid orange; */
+}
+
+.title {
+	border-bottom: 5px solid orange;
+	color: orange;
+}
+
+.addRmb {
+	width: 100px;
+	height: 100px;
+	border: 5px solid orange;
+	border-radius: 100px;
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	line-height: 100px;
+	
+}
+
+.circleProgress_wrapper{
+  width: 200px;
+  height: 200px;
+  margin-top: 15px;
+  margin-left: 15px;
+  position: relative;
+  line-height: 200px;
+  /* border:1px solid #ddd; */
+}
+
+.text {
+	padding-left: 30px;
+}
+
+.wrapper{
+  width: 100px;
+  height: 200px;
+  position: absolute;
+  top:0;
+  overflow: hidden;
+}
+.right{
+  right:0;
+}
+.left{
+  left:0;
+}
+.circleProgress {
+  width: 160px;
+  height: 160px;
+  border:20px solid rgb(232, 232, 12);
+  border-radius: 50%;
+  position: absolute;
+  top:0;
+  -webkit-transform: rotate(45deg);
+}
+.rightcircle {
+/*   border-top:20px solid green;
+  border-right:20px solid green; */
+  right:0;
+}
+.rightcircleAn {
+	-webkit-animation: circleProgressLoad_right 5s linear infinite;
+	-webkit-animation-iteration-count: 1;
+}
+
+.leftcircle {
+/*   border-bottom:20px solid green;
+  border-left:20px solid green; */
+  left:0;
+}
+.leftcircleAn {
+	-webkit-animation: circleProgressLoad_left 5s linear infinite;
+	-webkit-animation-iteration-count: 1;
+}
+@-webkit-keyframes circleProgressLoad_right{
+  0%{
+    border-top:20px solid #ED1A1A;
+    border-right:20px solid #ED1A1A;
+    -webkit-transform: rotate(45deg);
+  }
+  50%{
+    border-top:20px solid rgb(232, 232, 12);
+    border-right:20px solid rgb(232, 232, 12);
+    border-left:20px solid rgb(81, 197, 81);
+    border-bottom:20px solid rgb(81, 197, 81);
+    -webkit-transform: rotate(225deg);
+  }
+  100%{
+    border-left:20px solid green;
+    border-bottom:20px solid green;
+    -webkit-transform: rotate(225deg);
+  }
+}
+@-webkit-keyframes circleProgressLoad_left{
+  0%{
+    border-bottom:20px solid #ED1A1A;
+    border-left:20px solid #ED1A1A;
+    -webkit-transform: rotate(45deg);
+  }
+  50%{
+    border-bottom:20px solid rgb(232, 232, 12);
+    border-left:20px solid rgb(232, 232, 12);
+    border-top:20px solid rgb(81, 197, 81);
+    border-right:20px solid rgb(81, 197, 81);
+    -webkit-transform: rotate(45deg);
+  }
+  100%{
+    border-top:20px solid green;
+    border-right:20px solid green;
+    border-bottom:20px solid green;
+    border-left:20px solid green;
+    -webkit-transform: rotate(225deg);
+  }
+}
+
+.descTd {
+	text-align: center;
+	color: orange;
+}
+
+.pokerTd {
+	/* background: #123456; */
+	padding: 20px;
+}
+
+.poker {
+	/* border: 5px solid black; */
+	background: white;
+	height: 130px;
+	width: 95px;
+	/* height: 120px;
+	width: 85px; */
+	padding-top: 10px;
+	padding-left: 10px;
+	border-radius: 5px;
+	margin-left: 28%;
+}
+
+.poker img {
+	height: 120px;
+	width: 85px;
+}

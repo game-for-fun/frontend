@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="user-scalable=no" />
+		<title>welcome</title>
+		<link href="../css/welcome.css" rel="stylesheet" type="text/css">
+		<link href="../css/header.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="../js/welcome.js"></script>
+	</head>
+
+	<body>
+		<div class="back">
+			<img class="backImg" src="" />
+			<div class="zhaohuan" onclick="go('zhaohuan')">召唤</div>
+			<div class="jinji" onclick="go('jinji')">晋级</div>
+			<div class="huodong" onclick="go('huodong')">活动</div>
+			<div class="rank" onclick="go('rank')">排行</div>
+		</div>
+		<div class="bottom">
+			<img onclick="window.location.href='${ctx}'" class="fanhui" src="../img/icon/fanhui.png">
+		</div>
+
+		<div class="header">
+			<p class="overimg">
+				<a><img class="userImg" id="userImg" onclick="getUserImg()" src="../img/role/beijita.jpg"></a>
+				<i class="light"></i>
+			</p>
+			<div id="vip">VIP1</div>
+			<div class="userMsg">
+				<div class="userMoney">金币: <span id="userMoney">100000</span></div>
+				<div class="userRmb">龙石: <span id="userRmb">1000000</span></div><br/>
+				<div class="userName"><span id="userName">堂堂夹心饼</span> Lv: <span id="userLevel">1</span></div>
+				<div class="userScore">战力: <span id="userScore">80</span></div>
+			</div>
+		</div>
+		<div id="bg"></div>
+		<div id="show">
+			<input id="btnclose" style="float: right" type="button" value="Close" onclick="hideDiv();" />
+		</div>
+
+		<script>
+			if("${user.vip}" == 1) {
+				layer.msg("恭喜你成功毕业1阶竞技场!");
+			}
+		</script>
+		<script type="text/javascript" src="../js/header.js"></script>
+
+</html>

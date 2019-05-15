@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<title>index</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/lottery.css">
+		<script src="../js/jquery-2.0.3.min.js"></script>
+		<script src="../js/lottery.js"></script>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.fanhui {
+				position: fixed;
+				width: 120px;
+				height: 100px;
+				left: 20px;
+				bottom: 50px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="lotteryForm">
+			<button class="btn fleft" onclick="lottery(1)">220龙石</button>
+			<button class="btn fright" onclick="lottery(10)">2000龙石</button>
+		</div>
+		<div class="bottom">
+			<img onclick="history.go(-1)" class="fanhui" src="../img/icon/fanhui.png">
+		</div>
+	</body>
+
+</html>
