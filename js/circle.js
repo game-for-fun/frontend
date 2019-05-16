@@ -25,18 +25,13 @@ $(document).ready(function() {
 	};
 
 	$.ajax({
-		url: "../lottery/getAll.html",
-		type: "POST",
+		url: "http://localhost:20190/lottery/getAll",
+		type: "GET",
 		async: false,
 		success: function(data) {
-			var json = eval('(' + data + ')');
-			if(json.code == -1) {
-				alert(json.data);
-			}
-			if(json.code == 0) {
-				for(var i = 0; i < json.data.length; i++) {
-					lotteryName[i] = json.data[i].characterName;
-				}
+			var list = data.dataModel;
+			for(var i = 0; i < list.length; i++) {
+				lotteryName[i] = list[i].characterName;
 				turnplate.restaraunts = lotteryName;
 			}
 		}
@@ -67,20 +62,17 @@ $(document).ready(function() {
 
 	function lottery() {
 		$.ajax({
-			url: ctx + "/lottery/ifEnough.html",
-			type: "POST",
-			data: {
-				"paramNum": paramNum
-			},
+			url: "http://localhost:20190/lottery/ifEnough/" + 2000,
+			type: "GET",
 			async: false,
 			success: function(data) {
-				var json = eval('(' + data + ')');
-				if(json.code == -1) {
-					layer.msg(json.data);
+				console.log(data);
+				if(data.code == -1) {
+					layer.msg(data.message);
 					enoughFlag = false;
 					return;
 				}
-				if(json.code == 0) {
+				if(data.code == 0) {
 					enoughFlag = true;
 				}
 			}
@@ -94,19 +86,20 @@ $(document).ready(function() {
 
 			$("#myRmb").html($("#myRmb").html() - paramNum);
 			var characterName = turnplate.restaraunts[item];
-			$.ajax({
-				url: ctx + "/lottery/exchange.html",
-				type: "POST",
-				data: {
-					"paramNum": paramNum,
-					"characterName": characterName
-				},
-				async: false,
-				success: function(data) {
-					//奖品数量等于10,指针落在对应奖品区域的中心角度[252, 216, 180, 144, 108, 72, 36, 360, 324, 288]
-					rotateFn(item + 1, turnplate.restaraunts[item]);
-				}
-			});
+			//			$.ajax({
+			//				url: "http://localhost:20190/lottery/exchange",
+			//				type: "POST",
+			//				data: {
+			//					"paramNum": paramNum,
+			//					"characterName": characterName
+			//				},
+			//				async: false,
+			//				success: function(data) {
+			//					//奖品数量等于10,指针落在对应奖品区域的中心角度[252, 216, 180, 144, 108, 72, 36, 360, 324, 288]
+			//					rotateFn(item + 1, turnplate.restaraunts[item]);
+			//				}
+			//			});
+			rotateFn(item + 1, turnplate.restaraunts[item]);
 
 		}
 	}
@@ -119,12 +112,11 @@ $(document).ready(function() {
 
 function rnd(n, m) {
 	$.ajax({
-		url: ctx + "/lottery/lottery.html",
+		url: "http://localhost:20190/lottery/lotterys",
 		type: "POST",
 		async: false,
 		success: function(data) {
-			var json = eval('(' + data + ')');
-			index = json.data;
+			index = data.dataModel;
 		}
 	});
 	return index;
