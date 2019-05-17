@@ -25,7 +25,7 @@ $(document).ready(function() {
 	};
 
 	$.ajax({
-		url: "http://localhost:20190/lottery/getAll",
+		url: "http://116.62.136.209/ultraman/lottery/getAll",
 		type: "GET",
 		async: false,
 		success: function(data) {
@@ -62,7 +62,7 @@ $(document).ready(function() {
 
 	function lottery() {
 		$.ajax({
-			url: "http://localhost:20190/lottery/ifEnough/" + 2000,
+			url: "http://116.62.136.209/ultraman/lottery/ifEnough/" + 2000,
 			type: "GET",
 			async: false,
 			success: function(data) {
@@ -87,7 +87,7 @@ $(document).ready(function() {
 			$("#myRmb").html($("#myRmb").html() - paramNum);
 			var characterName = turnplate.restaraunts[item];
 			//			$.ajax({
-			//				url: "http://localhost:20190/lottery/exchange",
+			//				url: "http://116.62.136.209/ultraman/lottery/exchange",
 			//				type: "POST",
 			//				data: {
 			//					"paramNum": paramNum,
@@ -112,7 +112,7 @@ $(document).ready(function() {
 
 function rnd(n, m) {
 	$.ajax({
-		url: "http://localhost:20190/lottery/lotterys",
+		url: "http://116.62.136.209/ultraman/lottery/lotterys",
 		type: "POST",
 		async: false,
 		success: function(data) {
